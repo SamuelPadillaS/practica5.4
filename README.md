@@ -214,7 +214,7 @@ Ya con todo funcionando y subiendose toda imagen creada a nuestro repositorio de
 docker exec -d -p 80:80 nombre_imagen
 ~~~
 
-![Screenshot 2024-03-13 000312](https://github.com/SamuelPadillaS/practica5.4/assets/114667075/bf46141f-d084-45d0-bf49-446d6df442a0)
+![280e5dc2-26f1-11e5-9f1f-5891c3ca8b26](https://github.com/SamuelPadillaS/practica5.4/assets/114667075/fe1796f2-2ec6-4553-9d40-1b151d69f206)
 
 Ya con esto debería funcionarte.
 
