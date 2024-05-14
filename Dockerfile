@@ -1,14 +1,20 @@
+# Usa la imagen base de NGINX
 FROM nginx:latest
 
-WORKDIR /usr/share/nginx/html/
+# Establece el directorio de trabajo
+WORKDIR /usr/share/nginx/html
 
-RUN apt-get update \
-    && apt-get install -y git \
-    && rm -rf /var/lib/apt/lists/*
+# Instala git
+RUN apt-get update && apt-get install -y git
 
-RUN git clone https://github.com/josejuansanchez/2048.git /app \
-    && cp -R /app/* /usr/share/nginx/html/
+# Clona el repositorio 2048
+RUN git clone https://github.com/josejuansanchez/2048.git /tmp \
+    && cp -R /tmp/* /usr/share/nginx/html \
+    && rm -rf /tmp
 
+# Exponer el puerto 80
 EXPOSE 80
 
+# Comando para iniciar NGINX al iniciar el contenedor
 CMD ["nginx", "-g", "daemon off;"]
+
