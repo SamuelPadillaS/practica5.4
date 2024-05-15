@@ -211,7 +211,7 @@ Esta sección se encuentra en "Settings > Actions > General"
 Ya con todo funcionando y subiendose toda imagen creada a nuestro repositorio de **DockerHub**, solo nos quedaria ejecutar nuestro contenedor a traves del puerto 80:
 
 ~~~
-docker exec -d -p 80:80 nombre_imagen
+docker run -d -p 80:80 nombre_imagen
 ~~~
 
 ![280e5dc2-26f1-11e5-9f1f-5891c3ca8b26](https://github.com/SamuelPadillaS/practica5.4/assets/114667075/fe1796f2-2ec6-4553-9d40-1b151d69f206)
