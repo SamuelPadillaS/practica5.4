@@ -18,3 +18,5 @@ EXPOSE 80
 # Comando para iniciar NGINX al iniciar el contenedor
 CMD ["nginx", "-g", "daemon off;"]
 
+
+
